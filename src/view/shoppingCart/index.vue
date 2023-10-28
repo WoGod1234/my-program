@@ -83,10 +83,7 @@ export default {
       let price = Math.random() * 100;
       this.cartList.push({
         title:
-          itemName +
-          " " +
-          Math.floor(Math.random() * nameList.length) +
-          "号儿子",
+          itemName + " " + Math.floor(Math.random() * nameList.length) + "号",
         imgUrl: imgUrl,
         num: Math.floor(Math.random() * 10),
         price: price.toFixed(2),
