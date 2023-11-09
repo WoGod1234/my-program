@@ -139,166 +139,175 @@ body {
 </style>
  -->
 <template>
-  <div class="readCenter">
-    <div class="flex_wrap">
-      <div>
-        一级目录：
-      </div>
-      <div>
-        <div class="active">
-          全部
-        </div>
-        <div>
-          一年级
-        </div>
-        <div>
-          二年级
-        </div>
-        <div>
-          三年级
-        </div>
-        <div>
-          四年级
-        </div>
-
-        <div>
-          四年级
-        </div>
-        <div>
-          四年级
-        </div>
-        <div>
-          四年级
-        </div>
-        <div>
-          四年级
-        </div>
-        <div>
-          四年级
-        </div>
-        <div>
-          四年级
-        </div>
-        <div>
-          四年级
-        </div>
-
-        <div>
-          四年级
-        </div>
-        <div>
-          四年级
-        </div>
-
-      </div>
-    </div>
+  <div>
+    <el-button @click="printSource">打印</el-button>
     <div
-      class="flex_wrap"
-      style="margin-top: 20px;"
+      class="readCenter"
+      ref="printContent"
     >
-      <div>
-        二级目录：
-      </div>
-      <div>
-        <div class="active">
-          全部
+      <div class="flex_wrap">
+        <div>
+          一级目录：
         </div>
         <div>
-          一年级
-        </div>
-        <div>
-          二年级
-        </div>
-        <div>
-          三年级
-        </div>
-        <div>
-          四年级
-        </div>
-        <div>
-          四年级
-        </div>
-        <div>
-          四年级
-        </div>
-        <div>
-          四年级
-        </div>
-      </div>
-    </div>
-    <div class="table_wrap">
-      <div>
-        <img
-          src=""
-          alt=""
-        >
-        <div>
-          精品课例《孤独的小螃蟹》青青小学刘老师1
-        </div>
-      </div>
-      <div>
-        <img
-          src=""
-          alt=""
-        >
-        <div>
-          精品课例《孤独的小螃蟹》青青小学刘老师1
-        </div>
-      </div>
-      <div>
-        <img
-          src=""
-          alt=""
-        >
-        <div>
-          精品课例《孤独的小螃蟹》青青小学刘老师1
-        </div>
-      </div>
-      <div>
-        <img
-          src=""
-          alt=""
-        >
-        <div>
-          精品课例《孤独的小螃蟹》青青小学刘老师1
-        </div>
-      </div>
+          <div class="active">
+            全部
+          </div>
+          <div>
+            一年级
+          </div>
+          <div>
+            二年级
+          </div>
+          <div>
+            三年级
+          </div>
+          <div>
+            四年级
+          </div>
 
-      <div>
-        <img
-          src=""
-          alt=""
-        >
-        <div>
-          精品课例《孤独的小螃蟹》青青小学刘老师1
-        </div>
-      </div>
-      <div>
-        <img
-          src=""
-          alt=""
-        >
-        <div>
-          精品课例《孤独的小螃蟹》青青小学刘老师1
-        </div>
-      </div>
+          <div>
+            四年级
+          </div>
+          <div>
+            四年级
+          </div>
+          <div>
+            四年级
+          </div>
+          <div>
+            四年级
+          </div>
+          <div>
+            四年级
+          </div>
+          <div>
+            四年级
+          </div>
+          <div>
+            四年级
+          </div>
 
-    </div>
-    <div class="pagination">
-      <el-pagination
-        @size-change="handleSizeChange"
-        @current-change="handleCurrentChange"
-        :current-page="pageNum"
-        :page-sizes="[8, 16, 24, 32]"
-        :page-size="pageSize"
-        layout="prev, pager, next"
-        :total="total"
+          <div>
+            四年级
+          </div>
+          <div>
+            四年级
+          </div>
+
+        </div>
+      </div>
+      <div
+        class="flex_wrap"
+        style="margin-top: 20px;"
       >
-      </el-pagination>
+        <div>
+          二级目录：
+        </div>
+        <div>
+          <div class="active">
+            全部
+          </div>
+          <div>
+            一年级
+          </div>
+          <div>
+            二年级
+          </div>
+          <div>
+            三年级
+          </div>
+          <div>
+            四年级
+          </div>
+          <div>
+            四年级
+          </div>
+          <div>
+            四年级
+          </div>
+          <div>
+            四年级
+          </div>
+        </div>
+      </div>
+      <div class="table_wrap">
+        <div>
+          <img
+            src=""
+            alt=""
+          >
+          <div>
+            精品课例《孤独的小螃蟹》青青小学刘老师1
+          </div>
+        </div>
+        <div>
+          <img
+            src=""
+            alt=""
+          >
+          <div>
+            精品课例《孤独的小螃蟹》青青小学刘老师1
+          </div>
+        </div>
+        <div>
+          <img
+            src=""
+            alt=""
+          >
+          <div>
+            精品课例《孤独的小螃蟹》青青小学刘老师1
+          </div>
+        </div>
+        <div>
+          <img
+            src=""
+            alt=""
+          >
+          <div>
+            精品课例《孤独的小螃蟹》青青小学刘老师1
+          </div>
+        </div>
+
+        <div>
+          <img
+            src=""
+            alt=""
+          >
+          <div>
+            精品课例《孤独的小螃蟹》青青小学刘老师1
+          </div>
+        </div>
+        <div>
+          <img
+            src=""
+            alt=""
+          >
+          <div>
+            精品课例《孤独的小螃蟹》青青小学刘老师1
+          </div>
+        </div>
+
+      </div>
+      <div class="pagination">
+        <el-pagination
+          @size-change="handleSizeChange"
+          @current-change="handleCurrentChange"
+          :current-page="pageNum"
+          :page-sizes="[8, 16, 24, 32]"
+          :page-size="pageSize"
+          layout="prev, pager, next"
+          :total="total"
+        >
+        </el-pagination>
+      </div>
     </div>
   </div>
+
 </template>
 <script>
+import html2canvas from "html2canvas";
+import printJS from "print-js";
 export default {
   name: "readCenter",
   data() {
@@ -309,7 +318,27 @@ export default {
       tableData: [],
     };
   },
-  methods: {},
+  created() {},
+  methods: {
+    printSource() {
+      html2canvas(this.$refs.printContent, {
+        backgroundColor: null,
+        useCORS: true,
+        // windowHeight: document.body.scrollHeight
+      }).then((canvas) => {
+        // let url = canvas.toDataURL('image/jpeg', 1.0)
+        const url = canvas.toDataURL();
+        this.img = url;
+        printJS({
+          printable: url,
+          type: "image",
+          documentTitle: "打印图片",
+        });
+
+        // ////console.log(url)
+      });
+    },
+  },
 };
 </script>
 
