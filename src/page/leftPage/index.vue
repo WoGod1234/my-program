@@ -62,6 +62,12 @@
         </template>
         <el-menu-item index="/menu/shoppingCart">购物车</el-menu-item>
       </el-submenu>
+      <el-submenu index="10">
+        <template slot="title">
+          <span>自定义打印</span>
+        </template>
+        <el-menu-item index="/menu/autoPrint">自定义打印</el-menu-item>
+      </el-submenu>
     </el-menu>
   </div>
 </template>

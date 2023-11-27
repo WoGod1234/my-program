@@ -78,7 +78,8 @@ export default {
       }
       let imgList = ["c1", "c2", "c3", "c4"];
       let imgUrl = imgList[Math.floor(Math.random() * imgList.length)];
-      let nameList = ["张志星", "张盛祺", "徐艺华"];
+      // let nameList = ["张志星", "张盛祺", "徐艺华"];
+      let nameList = ["江西", "乐平", "景德镇"];
       let itemName = nameList[Math.floor(Math.random() * nameList.length)];
       let price = Math.random() * 100;
       this.cartList.push({

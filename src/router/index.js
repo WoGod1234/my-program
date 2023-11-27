@@ -10,6 +10,7 @@ import tree from '@/view/tree'
 import slideTab from '@/view/slideTab'
 import useJs from '@/view/useJs'
 import shoppingCart from '@/view/shoppingCart'
+import autoPrint from '@/view/autoPrint'
 
 Vue.use(Router)
 
@@ -78,6 +79,13 @@ const routes = [{
     component: shoppingCart,
     meta: {
       title: '购物车',
+      keepAlive: false
+    }
+  },{
+    path: '/menu/autoPrint',
+    component: autoPrint,
+    meta: {
+      title: '自定义打印',
       keepAlive: false
     }
   }]
