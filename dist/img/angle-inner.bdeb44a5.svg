@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="498px" height="311px" viewBox="0 0 498 311" version="1.1" 
+xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>三角形2</title>
+    <defs>
+        <radialGradient cx="50%" cy="2.10641182%" fx="50%" fy="2.10641182%" r="80.8834434%" gradientTransform="translate(0.500000,0.021064),scale(0.395187,1.000000),rotate(90.000000),scale(1.000000,1.049609),translate(-0.500000,-0.021064)" id="radialGradient-1">
+            <stop stop-color="#9464FF" offset="0%"></stop>
+            <stop stop-color="#C2DCFF" stop-opacity="0" offset="100%"></stop>
+        </radialGradient>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.5">
+        <g id="大数据中心" transform="translate(-711.000000, -169.000000)" fill="url(#radialGradient-1)">
+            <g id="编组" transform="translate(486.000000, 105.000000)">
+                <polygon id="三角形2" transform="translate(474.458763, 187.500000) scale(1, -1) translate(-474.458763, -187.500000) " points="474.458763 0 948.917526 375 0 375"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1920px" height="37px" viewBox="0 0 1920 37" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>路径 2备份</title>
+    <defs>
+        <linearGradient x1="100%" y1="50%" x2="1.21430643e-15%" y2="50%" id="linearGradient-1">
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" offset="30.3704108%"></stop>
+            <stop stop-color="#5CA2FF" offset="50.0491696%"></stop>
+            <stop stop-color="#FFFFFF" offset="69.2580857%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.600000024">
+        <g id="大数据中心" transform="translate(0.000000, -66.000000)" stroke="url(#linearGradient-1)" stroke-width="4">
+            <path d="M0,101 L469.661372,88.5277223 C475.210821,88.3803517 480.738361,87.7711299 486.186698,86.7063716 L572.406534,69.8565928 C578.725189,68.6217501 585.148329,68 591.586514,68 L1328.22714,68 C1334.78867,68 1341.33428,68.645802 1347.7693,69.9280673 L1431.63149,86.6387437 C1437.20038,87.74842 1442.85366,88.3817484 1448.53005,88.5318618 L1920,101 L1920,101" id="路径-2备份"></path>
+        </g>
+    </g>
+</svg>
