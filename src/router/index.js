@@ -21,7 +21,7 @@ const routes = [{
     path: '/menu/bgClock',
     component: bgClock,
     meta: {
-      title: '时钟',
+      title: '时钟八卦图',
       keepAlive: false
     }
   }, {
@@ -43,14 +43,14 @@ const routes = [{
     path: '/menu/txMap',
     component: txMap,
     meta: {
-      title: '地图',
+      title: '腾讯地图',
       keepAlive: false
     }
   }, {
     path: '/menu/transForm',
     component: transForm,
     meta: {
-      title: '图片动效',
+      title: '放假通知',
       keepAlive: false
     }
   }, {
@@ -85,7 +85,7 @@ const routes = [{
     path: '/menu/autoPrint',
     component: autoPrint,
     meta: {
-      title: '自定义打印',
+      title: '监控中心',
       keepAlive: false
     }
   }]

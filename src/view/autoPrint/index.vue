@@ -169,8 +169,8 @@ export default {
 <style  lang="scss" scoped>
 .data-screen {
   background-color: hsl(223, 87%, 9%);
-  height: 900px;
-  padding: 10px;
+  padding: 10px 10px 60px 10px;
+  border-radius: 10px;
   box-sizing: border-box;
   .header {
     display: flex;
