@@ -7,6 +7,7 @@
       :on-success="handleAvatarSuccess"
       :before-upload="beforeAvatarUpload"
       :on-remove="handleRemove"
+      :limit="childrenProps.limitNum"
     >
       <div v-if="!childrenProps.childrenPicStyle">
         <img
@@ -29,14 +30,12 @@
   </div>
 </template>
 <script>
-import store from "@/store";
+// import store from "@/store";
 export default {
   name: "pictureUp",
-  props: ["childrenProps"],
+  props: ["childrenProps", "imgUrl"],
   data() {
-    return {
-      imgUrl: "",
-    };
+    return {};
   },
   computed: {
     headers: function () {
@@ -56,33 +55,30 @@ export default {
       this.$emit("getPicUrl", this.imgUrl);
     },
     beforeAvatarUpload(file) {
-      if (this.childrenProps.childrenPicSize != undefined) {
-        const isLt2M =
+      if (this.childrenProps.childrenPicSize) {
+        const isLtMb =
           file.size / 1024 / 1024 < this.childrenProps.childrenPicSize;
-        if (!isLt2M) {
+        if (!isLtMb) {
           this.$message.error(
             "上传图片大小不能超过 " + this.childrenProps.childrenPicSize + "MB!"
           );
-          this.imgUrl = "";
           return false;
         }
       }
       // 限制图片上传类型
       if (
+        this.childrenProps.childrenPicType &&
         [this.childrenProps.childrenPicType][0].indexOf(
           file.name.split(".")[file.name.split(".").length - 1].toLowerCase()
-        ) == -1 &&
-        this.childrenProps.childrenPicType != ""
+        ) == -1
       ) {
         this.$message.error(
           "图片格式错误，仅支持" +
             this.childrenProps.childrenPicType +
             "格式图片，请重新上传!"
         );
-        this.imgUrl = "";
         return false;
       }
-      return true;
     },
   },
 };

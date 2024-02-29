@@ -60,6 +60,15 @@
             alt=""
             class="img_r"
           >
+          <div class="circle_text">
+            <div class="a">
+              {{ title.split('')[0] }}
+            </div>
+            <div class="b">
+              {{ title.split('')[1] }}
+            </div>
+            {{ title.split('')[2] }}
+          </div>
         </div>
       </div>
       <div class="chart_right">
@@ -432,6 +441,9 @@ export default {
           //   left: 0px;
           //   transform: translateY(0px);
           // }
+        }
+        .circle_text {
+          color: white;
         }
       }
     }

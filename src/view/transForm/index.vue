@@ -55,7 +55,7 @@ export default {
       sec: "",
       time: "",
       leftDay: "",
-      yearDay: "2024-02-09 00:00:00",
+      yearDay: "2025-01-28 18:00:00",
       time1: "",
       count: 0,
       avltimer: "",
