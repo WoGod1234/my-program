@@ -66,7 +66,7 @@ export default {
     add() {
       console.log("add");
       this.arrayList.push({
-        name: "无敌是" + Math.floor(Math.random() * 10) + "多么寂寞",
+        name: "X" + Math.floor(Math.random() * 10) + "wk",
       });
       this.num++;
       this.arrayList2.push({
