@@ -39,12 +39,12 @@
         </template>
         <el-menu-item index="/menu/txMap">地图</el-menu-item>
       </el-submenu>
-      <el-submenu index="2">
+      <!-- <el-submenu index="2">
         <template slot="title">
           <span>时钟八卦图</span>
         </template>
         <el-menu-item index="/menu/bgClock">时钟</el-menu-item>
-      </el-submenu>
+      </el-submenu> -->
       <el-submenu index="4">
         <template slot="title">
           <span>table行合并</span>
