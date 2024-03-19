@@ -6,6 +6,8 @@ import axios from "./router/axios";
 import VueAxios from "vue-axios";
 import router from './router'
 import store from './store'
+import basicContainer from './components/basic-container/main'
+
 
 Vue.config.productionTip = false
 
@@ -14,6 +16,8 @@ Vue.use(ElementUI, {
   menuType: "text"
 });
 
+// 注册全局容器
+Vue.component('basicContainer', basicContainer)
 
 Vue.prototype.$axios = axios
 axios.defaults.withCredentials = true

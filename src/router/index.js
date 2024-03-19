@@ -11,6 +11,8 @@ import slideTab from '@/view/slideTab'
 import useJs from '@/view/useJs'
 import shoppingCart from '@/view/shoppingCart'
 import autoPrint from '@/view/autoPrint'
+import badBook from '@/view/bad-book'
+
 
 Vue.use(Router)
 
@@ -88,7 +90,16 @@ const routes = [{
       title: '监控中心',
       keepAlive: false
     }
-  }]
+    },
+  {
+    path: '/menu/badBook',
+    component: badBook,
+    meta: {
+      title: '不良图书',
+      keepAlive: false
+    }
+    },
+  ]
 }, {
   path: '/404',
   component: () =>

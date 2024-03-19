@@ -17,9 +17,9 @@
       </el-submenu> -->
       <el-submenu index="7">
         <template slot="title">
-          <span>打印</span>
+          <span>不良图书</span>
         </template>
-        <el-menu-item index="/menu/slideTab">打印</el-menu-item>
+        <el-menu-item index="/menu/badBook">不良图书</el-menu-item>
       </el-submenu>
       <el-submenu index="9">
         <template slot="title">
@@ -63,12 +63,12 @@
         </template>
         <el-menu-item index="/menu/tree">树结构</el-menu-item>
       </el-submenu> -->
-      <el-submenu index="8">
+      <!-- <el-submenu index="8">
         <template slot="title">
           <span>Js实用</span>
         </template>
         <el-menu-item index="/menu/useJs">Js实用</el-menu-item>
-      </el-submenu>
+      </el-submenu> -->
     </el-menu>
   </div>
 </template>
