@@ -54,7 +54,7 @@ export default {
     this.initMap();
   },
   created() {
-    API.login({ user: "666" }).then((res) => {});
+    // API.login({ user: "666" }).then((res) => {});
   },
   methods: {
     //触发关键词输入提示事件
