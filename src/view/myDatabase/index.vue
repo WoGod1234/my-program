@@ -82,7 +82,7 @@ export default {
                 this.$message.error('用户不存在')
                 return
             }
-            if (this.form.id) {
+            if (!this.form.id) {
                 this.$message.error('用户不存在')
                 return
             }
