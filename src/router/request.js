@@ -12,6 +12,7 @@ const service = axios.create({
 })
 // 2.请求拦截器
 service.interceptors.request.use(config => {
+  console.log(config.url)
   if (config.url.indexOf('https://wogod1234.github.io') > -1) {
     this.$message.warning('只支持开发者本地服务器')
     return
