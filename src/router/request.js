@@ -12,7 +12,8 @@ const service = axios.create({
 })
 // 2.请求拦截器
 service.interceptors.request.use(config => {
-  if (process.env.NODE_ENV == "development") {
+  console.log(process.env.NODE_ENV)
+  if (process.env.NODE_ENV != "development") {
     this.$message.warning('当前是开发环境，本地服务器无法联通')
     return
   }
