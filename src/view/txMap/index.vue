@@ -24,12 +24,12 @@ export default {
 
           styleId: "myStyle", //指定样式id
 
-          position: new TMap.LatLng(30.33610725981676, 112.24231780622101), //点标记坐标位置
+          position: new TMap.LatLng(28.978364, 117.136109), //点标记坐标位置
 
           properties: {
             //自定义属性
 
-            title: "荆州市政府",
+            title: "大乐平帝国",
           },
         },
       ],
@@ -79,7 +79,7 @@ export default {
     initMap() {
       //设置一个默认的中心点 (荆州市)
 
-      var center = new TMap.LatLng(30.35269, 112.19016);
+      var center = new TMap.LatLng(28.978364, 117.136109);
 
       //初始化地图
 
