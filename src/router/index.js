@@ -12,6 +12,8 @@ import useJs from '@/view/useJs'
 import shoppingCart from '@/view/shoppingCart'
 import autoPrint from '@/view/autoPrint'
 import badBook from '@/view/bad-book'
+import myDatabase from '@/view/myDatabase'
+
 
 
 Vue.use(Router)
@@ -62,35 +64,35 @@ const routes = [{
       title: '树结构',
       keepAlive: false
     }
-  },{
+  }, {
     path: '/menu/slideTab',
     component: slideTab,
     meta: {
       title: '滑动效果',
       keepAlive: false
     }
-  },{
+  }, {
     path: '/menu/useJs',
     component: useJs,
     meta: {
       title: 'JS实用',
       keepAlive: false
     }
-  },{
+  }, {
     path: '/menu/shoppingCart',
     component: shoppingCart,
     meta: {
       title: '购物车',
       keepAlive: false
     }
-  },{
+  }, {
     path: '/menu/autoPrint',
     component: autoPrint,
     meta: {
       title: '监控中心',
       keepAlive: false
     }
-    },
+  },
   {
     path: '/menu/badBook',
     component: badBook,
@@ -98,7 +100,15 @@ const routes = [{
       title: '不良图书',
       keepAlive: false
     }
-    },
+  },
+  {
+    path: '/menu/myDatabase',
+    component: myDatabase,
+    meta: {
+      title: 'mysql数据库',
+      keepAlive: false
+    }
+  },
   ]
 }, {
   path: '/404',
