@@ -12,6 +12,10 @@ const service = axios.create({
 })
 // 2.请求拦截器
 service.interceptors.request.use(config => {
+  if (config.url.indexOf('https://wogod1234.github.io') > -1) {
+    this.$message.warning('只支持开发者本地服务器')
+    return
+  }
   //发请求前做的一些处理，数据转化，配置请求头，设置token,设置loading等，根据需求去添加
   config.data = JSON.stringify(config.data); //数据转化,也可以使用qs转换
   config.headers = {

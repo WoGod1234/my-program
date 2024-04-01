@@ -54,6 +54,18 @@ export default {
             });
         },
         submit() {
+            let idList = []
+            this.tableData.map(item => {
+                idList.push(item.id.toString())
+            })
+            if (idList.indexOf(this.form.id) > -1) {
+                this.$message.error('用户ID不能重复')
+                return
+            }
+            if (!this.form.id) {
+                this.$message.error('用户ID不能为空')
+                return
+            }
             API.addUser(this.form).then(res => {
                 if (res.data.code == 200) {
                     this.$message.success('添加成功')
@@ -64,7 +76,7 @@ export default {
         edit() {
             let idList = []
             this.tableData.map(item => {
-                idList.push(item.id)
+                idList.push(item.id.toString())
             })
             if (idList.indexOf(this.form.id) == -1) {
                 this.$message.error('用户不存在')

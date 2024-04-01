@@ -7,6 +7,9 @@ import VueAxios from "vue-axios";
 import router from './router'
 import store from './store'
 import basicContainer from './components/basic-container/main'
+import { VueJsonp } from 'vue-jsonp'
+
+Vue.use(VueJsonp)
 
 
 Vue.config.productionTip = false

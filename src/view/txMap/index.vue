@@ -1,23 +1,9 @@
 <template>
   <div class="index">
     <!-- 地图容器 -->
-    <el-select
-      v-model="addressValue"
-      multiple
-      filterable
-      remote
-      reserve-keyword
-      placeholder="请输入关键词"
-      :remote-method="getsuggest"
-      :loading="loading"
-      style="width: 100%;margin-bottom: 30px;"
-    >
-      <el-option
-        v-for="item in addressList"
-        :key="item.id"
-        :label="item.title+'——'+item.address"
-        :value="item.id"
-      >
+    <el-select v-model="addressValue" multiple filterable remote reserve-keyword placeholder="请输入关键词"
+      :remote-method="getsuggest" :loading="loading" style="width: 100%;margin-bottom: 30px;">
+      <el-option v-for="item in addressList" :key="item.id" :label="item.title + '——' + item.address" :value="item.id">
       </el-option>
     </el-select>
     <div id="container"></div>
@@ -69,19 +55,21 @@ export default {
         return;
       }
       // 在执行这一步之前要配置跨域，不然会报错
-      this.$axios
-        .get("/api2/ws/place/v1/suggestion", {
-          params: {
-            keyword: e, //关键字
-            region: that.city, //当前城市
-            key: "RBNBZ-QUO6F-4NWJN-NYP2R-U22Z2-QFBTP", //你申请的key
-          },
-        })
+      this.$jsonp("https://apis.map.qq.com/ws/place/v1/suggestion/", {
+        region: "中国",
+
+        keyword: e,
+
+        key: "RBNBZ-QUO6F-4NWJN-NYP2R-U22Z2-QFBTP",
+
+        output: "jsonp"
+
+      })
         .then((res) => {
           //成功返回的信息
           console.log(that.city);
           console.log(res);
-          that.addressList = res.data.data;
+          that.addressList = res.data;
         })
         .catch((err) => {
           console.log(err);
@@ -232,6 +220,7 @@ export default {
   height: 100%;
   border: 1px solid red;
 }
+
 .img {
   width: 150px;
 }
